@@ -21,15 +21,6 @@ nav{
     border-bottom: 2px solid #E2E2E2;
 }
 
-
-.navbar-collapse{
-    justify-content: flex-end;
-}
-
-.nav-item{
-    margin: 0 10px;
-}
-
 section.banner{
     width: 100vw;
     height: 100vh;
