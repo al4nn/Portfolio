@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+input,
+textarea{
+    border: 0;
+    outline: none;
+    resize: none;
+    display: inline-block;
+}
+
+nav{
+    overflow-y: hidden;
+    height: 100px;
+    background-color: white;
+    border-bottom: 2px solid #E2E2E2;
+}
+
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+section.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/bg/bg4.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    /*border-bottom-right-radius: 200px;*/
+    border-bottom: 10px solid #0085FF;
+}
+
+.overlay-banner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    /*border-bottom-right-radius: 196px;*/
+}
+
+section.banner h2{
+    left: 25%;
+    top: 40%;
+    transform: translate(-40%-25%);
+    text-transform: uppercase;
+    font-size: 65px;
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+section.banner h3{
+    left: 25%;
+    top: 40%;
+    transform: translate(-40% -25%);
+    -ms-transform: translate(-40% -25%);
+    -webkit-transform: translate(-40% -25%);
+    -moz-transform: translate(-40% -25%);
+    text-transform: uppercase;
+    font-size: 35px;
+    position: relative;
+    color: #0085ff;
+    z-index: 2;
+}
+
+section.banner #text {
+    color: #0085ff;
+}
+
+@keyframes blink {
+    from, to { 
+        background-color: transparent 
+    }
+    50% { 
+        background-color: white; 
+    }
+}
+
+section.sobre{
+    padding: 100px 0;
+}
+
+section.sobre .img-autor > img{
+    height: 550px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border: 10px solid #EEEEEE;
+}
+
+section.especialidades{
+    border-top: 10px solid #0085FF;
+    /*border-top-left-radius: 200px;*/
+    border-bottom: 10px solid #0085FF;
+    /*border-bottom-right-radius: 200px;*/
+    padding: 100px 0;
+    background-color: #EEEEEE;
+}
+
+section.especialidades h2{
+    text-align: center;
+    font-weight: 300;
+}
+
+.box-especialidade{
+    border-right: 1px solid #666666;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.box-especialidade:nth-child(3){
+    border: 0;
+}
+
+.box-especialidade h3{
+    font-size: 40px;
+}
+
+.box-especialidade h4{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.box-especialidade p{
+    font-weight: 300;
+    color: #444444;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+section.portfolio{
+    padding: 100px 0;
+}
+
+section.portfolio h2{
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.conteudo-portfolio img{
+    align-items: center;
+    height: 200px;
+}
+
+section.servicos{
+    border-top: 10px solid #0085FF;
+    /*border-top-left-radius: 200px;*/
+    border-bottom: 10px solid #0085FF;
+    /*border-bottom-right-radius: 200px;*/
+    padding: 100px 0;
+    background-color: #EEEEEE;
+}
+
+section.servicos h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+section.contato{
+    padding: 100px 0;
+}
+
+section.contato h2{
+    font-weight: 300;
+}
+
+section.contato .social-contato p{
+    font-size: 24px;
+}
+
+section.contato .social-contato a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+section.contato .social-contato a img{
+    width: 20px;
+}
+
+footer{
+    border-top: 10px solid #0085FF;
+    /*border-top-left-radius: 200px;*/
+    padding: 40px 0;
+    background-color: #EEEEEE;
+}
+
+footer .links-footer a{
+    text-decoration: none;
+}
+
+footer .logo-footer img{
+    width: 150px;
+}
+
+@media screen and (max-width: 768px){
+    nav .desktop{
+        display: none;
+    }
+
+    nav .mobile{
+        display: block;
+    }
+
+    section.banner{
+        /*border-bottom-right-radius: 60px;*/
+        border-bottom: 10px solid #0085FF;
+    }
+
+    .overlay-banner{
+        /*border-bottom-right-radius: 54px;*/
+    }
+
+    section.banner h2{
+        font-size: 24px;
+        left: 2%;
+    }
+
+    section.banner h3{
+        font-size: 18px;
+        left: 2%;
+    }
+
+    section.banner #cursor{
+        height: 30px;
+    }
+
+    section.sobre .img-autor img{
+        height: 450px;
+    }
+
+    section.especialidades{
+        border-top: 8px solid #0085FF;
+        /*border-top-left-radius: 60px;*/
+        border-bottom: 8px solid #0085FF;
+        /*border-bottom-right-radius: 60px;*/
+    }
+
+    .box-especialidade{
+        border-right: 0;
+        border-bottom: 1px solid #666666;
+        margin: 20px 0;
+    }
+
+    section.servicos{
+        border-top: 8px solid #0085FF;
+        /*border-top-left-radius: 60px;*/
+        border-bottom: 8px solid #0085FF;
+        /*border-bottom-right-radius: 60px;*/
+    }
+
+    section.contato .social-contato{
+        margin-top: 40px;
+    }
+
+    footer{
+        border-top: 8px solid #0085FF;
+        border-top-left-radius: 60px;
+    }
+
+    footer .links-footer{
+        font-size: 14px;
+    }
+
+    footer .logo-container{
+        position: absolute;
+    }
+
+    footer .logo-footer img{
+        position: relative;
+        width: 100px;
+    }
+
+    footer .copyright{
+        display: none;
+    }
+}
